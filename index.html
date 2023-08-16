@@ -1,41 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
   <title>Grid Form</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui/dist/semantic.min.css">
 </head>
 <body>
-  <div class="grid">
-    <table>
-      <thead>
-        <tr>
-          <th>面型</th>
-          <th>骨型</th>
-          <th>牙型</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><label for="cell1">面型</label><input type="text" id="cell1"></td>
-          <td><label for="cell2">骨型</label><input type="text" id="cell2"></td>
-          <td><label for="cell3">牙型</label><input type="text" id="cell3"></td>
-        </tr>
-        <tr>
-          <td><label for="cell4">面型</label><input type="text" id="cell4"></td>
-          <td><label for="cell5">骨型</label><input type="text" id="cell5"></td>
-          <td><label for="cell6">牙型</label><input type="text" id="cell6"></td>
-        </tr>
-        <tr>
-          <td><label for="cell7">面型</label><input type="text" id="cell7"></td>
-          <td><label for="cell8">骨型</label><input type="text" id="cell8"></td>
-          <td><label for="cell9">牙型</label><input type="text" id="cell9"></td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="ui grid">
+    <div class="row">
+      <div class="column"><div>垂直向</div></div>
+      <div class="column"><div>矢状向</div></div>
+      <div class="column"><div>水平向</div></div>
+    </div>
+    <div class="row">
+      <div class="column"><div>面型</div><input type="text" id="cell1"></div>
+      <div class="column"><div>骨型</div><input type="text" id="cell2"></div>
+      <div class="column"><div>牙型</div><input type="text" id="cell3"></div>
+    </div>
+    <div class="row">
+      <div class="column"><div>面型</div><input type="text" id="cell4"></div>
+      <div class="column"><div>骨型</div><input type="text" id="cell5"></div>
+      <div class="column"><div>牙型</div><input type="text" id="cell6"></div>
+    </div>
+    <div class="row">
+      <div class="column"><div>面型</div><input type="text" id="cell7"></div>
+      <div class="column"><div>骨型</div><input type="text" id="cell8"></div>
+      <div class="column"><div>牙型</div><input type="text" id="cell9"></div>
+    </div>
   </div>
   <button id="submitBtn">Submit</button>
   <div id="result"></div>
-  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui/dist/semantic.min.js"></script>
   <script>
     const submitBtn = document.getElementById('submitBtn');
     const resultDiv = document.getElementById('result');
