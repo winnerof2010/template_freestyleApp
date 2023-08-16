@@ -1,0 +1,19 @@
+/* CSS styles for the grid form */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 5px;
+}
+
+#submitBtn {
+  margin-top: 10px;
+}
+
+#result {
+  margin-top: 20px;
+}
